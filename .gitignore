@@ -402,3 +402,6 @@ FodyWeavers.xsd
 
 # Environment variables
 *.env
+
+# Data
+data/
