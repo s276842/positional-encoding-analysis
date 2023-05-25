@@ -3,3 +3,4 @@ pandas
 datasets
 evaluation
 pydantic
+plotly
