@@ -9,7 +9,8 @@ def __init__(self, **kwargs):
     super().__init__(**kwargs)
 
 def __call__(self, *args, **kwargs):
-    return print('something, but')
+    print('something, but')
+    return
     # tok = super().__call__(*args, **kwargs)
     # input_ids = tok['input_ids']
 
@@ -24,7 +25,8 @@ def __call__(self, *args, **kwargs):
 if __name__ == '__main__':
     tokenizer = CustomTokenizer.from_pretrained('t5-small')
     print(tokenizer._num_pads)
-    tokenizer.encode_plus('this is a test')
+    print(tokenizer.__call__(text='hi'))
+
     # tokenizer.num_pads = 23
     # print(tokenizer('this is a test'))
     # print(tokenizer.__getattribute__('num_pads'))
