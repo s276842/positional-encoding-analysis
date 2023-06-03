@@ -1,0 +1,41 @@
+{
+    "classification": {
+        "imdb": {
+            "input_column": "text",
+            "label_column": "label"
+        },
+
+        "sst2": {
+            "input_column": "sentence",
+            "label_column": "label"
+        },
+
+        "tweet_eval": {
+            "input_column": "text",
+            "label_column": "label"
+        }
+    },
+
+    "summarization": {    
+        "cnn_dailymail": {
+            "input_column": "article",
+            "label_column": "highlights"
+        },
+
+        "xsum": {
+            "input_column": "document",
+            "label_column": "summary"
+        },
+
+        "GEM/wiki_lingua": {
+            "input_column": "source",
+            "label_column": "target"
+        }
+    },
+
+    "generation": {
+        "oscar": {
+            "input_column": "text"
+        }
+    }
+}
