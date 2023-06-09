@@ -6,3 +6,4 @@ pydantic
 plotly
 evaluator
 rouge_score
+kaleido
